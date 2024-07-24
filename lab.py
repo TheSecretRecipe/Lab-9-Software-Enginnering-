@@ -6,10 +6,10 @@ def encode(number):
 
 
 def decode(number):
-    decoded_number = ''
+    result = ''
     for char in number:
-        decoded_number += str((int(char) - 3) % 10)
-        return decoded_number
+        result += str((int(char) + 3) % 10)
+    return result
 
 
 def main():
